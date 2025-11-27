@@ -11,8 +11,8 @@ flowchart TD
 
 A([Should we send a notification?])
 
-A --> B{Thread message && User subscribed?}
-B -->|Yes| C{Channel muted?}
+A --> B{"Thread message && User subscribed?"}
+B -->|Yes| C{"Channel muted?"}
 B -->|No| C
 
 C -->|Yes| NO1([NO])
@@ -31,7 +31,7 @@ G -->|Yes| NO1
 G -->|No| H
 
 H{Channel notification pref is "Nothing"?}
-H -->|Yes| I{Thread message && User subscribed?}
+H -->|Yes| I{"Thread message && User subscribed?"}
 H -->|No| J
 
 I -->|Yes| J
@@ -44,7 +44,7 @@ J -->|Everything| YES1([YES])
 
 J -->|Mentions| M{DM?}
 M -->|Yes| YES1
-M -->|No| N{@mention?}
+M -->|No| N{"@mention?"}
 N -->|Yes| YES1
 N -->|No| O{Comment on file owned by user?}
 O -->|Yes| YES1
@@ -75,7 +75,7 @@ M1 -->|No| M3{DM?}
 M2 -->|Yes| M3
 M2 -->|No| NO1
 M3 -->|Yes| YES1
-M3 -->|No| M4{@mention?}
+M3 -->|No| M4{"@mention?"}
 M4 -->|Yes| YES1
 M4 -->|No| M5{Highlight word?}
 M5 -->|Yes| YES1
