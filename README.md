@@ -37,7 +37,7 @@ H -->|No| J
 I -->|Yes| J
 I -->|No| NO1
 
-J{User's channel notification pref (device)?}
+J{"User's channel notification pref (device)?"}
 
 J -->|Nothing| NO1
 J -->|Everything| YES1([YES])
