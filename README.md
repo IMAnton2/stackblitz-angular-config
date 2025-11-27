@@ -1,7 +1,10 @@
 # github-angular-config
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/github-angular-config)
-
+```mermaid
+flowchart TD
+  A ---> B
+```
 ```mermaid
 %%{init: {"flowchart": {"defaultRenderer": "elk", "curve": "orthogonal"}} }%%
 flowchart TD
