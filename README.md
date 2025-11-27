@@ -24,7 +24,7 @@ D -->|No| F{"@channel/@everyone/@here message?"}
 E -->|Yes| F
 E -->|No| NO1
 
-F -->|Yes| G{@channel mentions suppressed?}
+F -->|Yes| G{"@channel mentions suppressed?"}
 F -->|No| H
 
 G -->|Yes| NO1
