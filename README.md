@@ -30,7 +30,7 @@ F -->|No| H
 G -->|Yes| NO1
 G -->|No| H
 
-H{Channel notification pref is "Nothing"?}
+H{Channel notification pref is Nothing?}
 H -->|Yes| I{"Thread message && User subscribed?"}
 H -->|No| J
 
