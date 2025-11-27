@@ -19,7 +19,7 @@ C -->|Yes| NO1([NO])
 C -->|No| D{User in Do Not Disturb?}
 
 D -->|Yes| E{Do Not Disturb Override?}
-D -->|No| F{@channel/@everyone/@here message?}
+D -->|No| F{"@channel/@everyone/@here message?"}
 
 E -->|Yes| F
 E -->|No| NO1
